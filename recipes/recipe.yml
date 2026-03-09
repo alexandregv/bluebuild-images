@@ -22,6 +22,8 @@ modules:
         - tmux
         - screen # For switch/router serial port
 
+        - cosmic-desktop-environment
+
         # H264 on Firefox
         - gstreamer1-plugins-good-extras
         - gstreamer1-plugins-ugly
