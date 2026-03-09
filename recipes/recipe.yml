@@ -25,8 +25,8 @@ modules:
         - cosmic-desktop-environment
 
         # H264 on Firefox
-        - gstreamer1-plugins-good-extras
-        - gstreamer1-plugins-ugly
+        #- gstreamer1-plugins-good-extras
+        #- gstreamer1-plugins-ugly
 
         # Yubikey & U2F
         - yubikey-manager
