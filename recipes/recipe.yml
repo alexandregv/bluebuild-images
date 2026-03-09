@@ -36,8 +36,8 @@ modules:
         - krb5-workstation # Kerberos (kinit etc)
 
         # Moar packages
-        - rpmfusion-free-release
-        - rpmfusion-nonfree-release
+        #- rpmfusion-free-release
+        #- rpmfusion-nonfree-release
 
         # Network
         - wireshark # The flatpak version can't do capture
