@@ -10,10 +10,7 @@ image-version: 44
 modules:
   - from-file: modules/system-files.yaml
 
-  - type: systemd
-    system:
-      enabled:
-        - nix.mount
+  - from-file: modules/nix.yaml
 
   - from-file: modules/dnf.yaml
 
