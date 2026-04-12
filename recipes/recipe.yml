@@ -13,6 +13,11 @@ modules:
       - source: system
         destination: / # copies files/system/* into your image's root folder /
 
+  - type: systemd
+    system:
+      enabled:
+        - nix.mount
+
   - type: dnf
     #repos:
     #  copr:
