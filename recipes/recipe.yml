@@ -5,7 +5,7 @@ name: fedora-silverblue-cosmic-42paris
 description: Atomic image with Cosmic DE and common utilities, based on Fedora Silverblue
 
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 43
+image-version: 44
 
 modules:
   - type: files
