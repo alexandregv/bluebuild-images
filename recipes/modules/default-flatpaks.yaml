@@ -1,0 +1,20 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+type: default-flatpaks
+configurations:
+  - notify: true # Send notification after install/uninstall is finished (true/false)
+    scope: system
+    install: # system flatpaks we want all users to have and not remove
+      - org.mozilla.firefox
+      - org.remmina.Remmina    # VNC client
+      - com.bitwarden.desktop  # Password manager
+      - dev.edfloreshz.CosmicTweaks # GNOME Tweaks but for Cosmic DE
+      - com.getpostman.Postman # REST client
+      - com.discordapp.Discord
+      - com.slack.Slack
+      - com.github.tchx84.Flatseal # Modify permissions of Flatpak apps
+      - org.gnome.seahorse.Application # GNOME "Passwords and Keys"
+      - com.yubico.yubioath
+      - ca.desrt.dconf-editor
+  - scope: user # Also add Flathub user repo, but no user packages

@@ -1,0 +1,39 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+type: dnf
+#repos:
+#  copr:
+#    - atim/starship
+install:
+  packages:
+    - tmux
+    - screen # For switch/router serial port
+
+    - '@cosmic-desktop-environment'
+
+    # H264 on Firefox
+    #- gstreamer1-plugins-good-extras
+    #- gstreamer1-plugins-ugly
+
+    # Yubikey & U2F
+    - yubikey-manager
+    - pam-u2f
+    - pamu2fcfg
+
+    - krb5-workstation # Kerberos (kinit etc)
+
+    # Moar packages
+    #- rpmfusion-free-release
+    #- rpmfusion-nonfree-release
+
+    # Network
+    - wireshark # The flatpak version can't do capture
+    - wireguard-tools
+    #- tcpdump
+    #- nmap
+remove:
+  packages:
+    # Remove firefox, in favor of the flatpak
+    - firefox
+    - firefox-langpacks

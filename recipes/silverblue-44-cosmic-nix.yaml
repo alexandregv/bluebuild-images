@@ -1,0 +1,22 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+name: fedora-silverblue-cosmic-nix
+description: Atomic image with Cosmic DE, Nix package manager and common utilities, based on Fedora Silverblue
+
+base-image: ghcr.io/ublue-os/silverblue-main
+image-version: 44
+
+modules:
+  - from-file: modules/system-files.yaml
+
+  - type: systemd
+    system:
+      enabled:
+        - nix.mount
+
+  - from-file: modules/dnf.yaml
+
+  - from-file: modules/default-flatpaks.yaml
+
+  - from-file: modules/signing.yaml
