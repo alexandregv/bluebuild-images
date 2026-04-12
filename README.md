@@ -7,6 +7,16 @@ Images are built according to YAML recipes found in [`./recipes/`](./recipes/). 
 
 ## Images
 
+#### Fedora Silverblue GNOME
+- Recipe: [`./recipes/silverblue-gnome.yaml`](./recipes/silverblue-gnome.yaml)
+- Image: [`ghcr.io/alexandregv/fedora-silverblue-gnome`](https://ghcr.io/alexandregv/fedora-silverblue-gnome)
+
+Fedora Silverblue (atomic) with the Cosmic desktop environment and common setup.
+
+#### Fedora Silverblue GNOME Nix
+- Recipe: [`./recipes/silverblue-gnome-nix.yaml`](./recipes/silverblue-gnome-nix.yaml)
+- Image: [`ghcr.io/alexandregv/fedora-silverblue-gnome-nix`](https://ghcr.io/alexandregv/fedora-silverblue-gnome-nix)
+
 #### Fedora Silverblue Cosmic
 - Recipe: [`./recipes/silverblue-cosmic.yaml`](./recipes/silverblue-cosmic.yaml)
 - Image: [`ghcr.io/alexandregv/fedora-silverblue-cosmic`](https://ghcr.io/alexandregv/fedora-silverblue-cosmic)
