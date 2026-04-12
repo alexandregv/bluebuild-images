@@ -1,8 +1,8 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 
-name: fedora-silverblue-43-cosmic
-description: Atomic image with Cosmic DE and common utilities, based on Fedora Silverblue 43
+name: fedora-silverblue-cosmic
+description: Atomic image with Cosmic DE and common utilities, based on Fedora Silverblue
 
 base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 43
