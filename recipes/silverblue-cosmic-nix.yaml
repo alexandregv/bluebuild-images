@@ -17,7 +17,7 @@ modules:
 
   - from-file: modules/dnf.yaml
 
-  - from-file: modules/dnf-cosmic.yaml
+  - from-file: modules/cosmic.yaml
 
   - from-file: modules/default-flatpaks.yaml
 
