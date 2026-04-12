@@ -7,27 +7,12 @@ Images are built according to YAML recipes found in [`./recipes/`](./recipes/). 
 
 ## Images
 
-#### Fedora Silverblue GNOME
-- Recipe: [`./recipes/silverblue-gnome.yaml`](./recipes/silverblue-gnome.yaml)
-- Image: [`ghcr.io/alexandregv/fedora-silverblue-gnome`](https://ghcr.io/alexandregv/fedora-silverblue-gnome)
-
-Fedora Silverblue (atomic) with the Cosmic desktop environment and common setup.
-
-#### Fedora Silverblue GNOME Nix
-- Recipe: [`./recipes/silverblue-gnome-nix.yaml`](./recipes/silverblue-gnome-nix.yaml)
-- Image: [`ghcr.io/alexandregv/fedora-silverblue-gnome-nix`](https://ghcr.io/alexandregv/fedora-silverblue-gnome-nix)
-
-#### Fedora Silverblue Cosmic
-- Recipe: [`./recipes/silverblue-cosmic.yaml`](./recipes/silverblue-cosmic.yaml)
-- Image: [`ghcr.io/alexandregv/fedora-silverblue-cosmic`](https://ghcr.io/alexandregv/fedora-silverblue-cosmic)
-
-Fedora Silverblue (atomic) with the Cosmic desktop environment and common setup.
-
-#### Fedora Silverblue Cosmic Nix
-- Recipe: [`./recipes/silverblue-cosmic-nix.yaml`](./recipes/silverblue-cosmic-nix.yaml)
-- Image: [`ghcr.io/alexandregv/fedora-silverblue-cosmic-nix`](https://ghcr.io/alexandregv/fedora-silverblue-cosmic-nix)
-
-Fedora Silverblue (atomic) with the Cosmic desktop environment, Nix package manager and common setup.
+| Name                         	| Recipe                                                               	| Image                                                                                                             |
+|------------------------------	|---------------------------------------------------------------------- |------------------------------------------------------------------------------------------------------------------ |
+| Fedora Silverblue GNOME      	| [`silverblue-gnome.yaml`](./recipes/silverblue-gnome.yaml)           	| [`ghcr.io/alexandregv/fedora-silverblue-gnome`](https://ghcr.io/alexandregv/fedora-silverblue-gnome)              |
+| Fedora Silverblue GNOME Nix  	| [`silverblue-gnome-nix.yaml`](./recipes/silverblue-gnome-nix.yaml)   	| [`ghcr.io/alexandregv/fedora-silverblue-gnome-nix`](https://ghcr.io/alexandregv/fedora-silverblue-gnome-nix)      |
+| Fedora Silverblue Cosmic     	| [`silverblue-cosmic.yaml`](./recipes/silverblue-cosmic.yaml)         	| [`ghcr.io/alexandregv/fedora-silverblue-cosmic`](https://ghcr.io/alexandregv/fedora-silverblue-cosmic)            |
+| Fedora Silverblue Cosmic Nix 	| [`silverblue-cosmic-nix.yaml`](./recipes/silverblue-cosmic-nix.yaml) 	| [`ghcr.io/alexandregv/fedora-silverblue-cosmic-nix`](https://ghcr.io/alexandregv/fedora-silverblue-cosmic-nix)    |
 
 ## Installation
 
