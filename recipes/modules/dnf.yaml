@@ -30,6 +30,8 @@ install:
     - wireguard-tools
     #- tcpdump
     #- nmap
+
+    - seahorse-nautilus # "Passwords & Keys" app
 remove:
   packages:
     # Remove firefox, in favor of the flatpak
