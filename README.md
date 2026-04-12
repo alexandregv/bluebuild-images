@@ -1,19 +1,31 @@
-# BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# BlueBuild Images &nbsp; [![bluebuild build badge](https://github.com/alexandregv/bluebuild-images/actions/workflows/build.yml/badge.svg)](https://github.com/alexandregv/bluebuild-images/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+This repository provides Linux images built using [BlueBuild](https://blue-build.org). It is based on the [BlueBuild template](https://github.com/blue-build/template).  
+The CI builds weekly and follows base image updates, adding the modified layers on top.
 
-After setup, it is recommended you update this README to describe your custom image.
+Images are built according to YAML recipes found in [`./recipes/`](./recipes/). They share common modules found in [`./recipes/modules/`](./recipes/modules/).
+
+## Images
+
+#### Fedora Silverblue Cosmic
+- Recipe: [`./recipes/silverblue-cosmic.yaml`](./recipes/silverblue-cosmic.yaml)
+- Image: [`ghcr.io/alexandregv/fedora-silverblue-cosmic`](https://ghcr.io/alexandregv/fedora-silverblue-cosmic)
+
+Fedora Silverblue (atomic) with the Cosmic desktop environment and common setup.
+
+#### Fedora Silverblue Cosmic Nix
+- Recipe: [`./recipes/silverblue-cosmic-nix.yaml`](./recipes/silverblue-cosmic-nix.yaml)
+- Image: [`ghcr.io/alexandregv/fedora-silverblue-cosmic-nix`](https://ghcr.io/alexandregv/fedora-silverblue-cosmic-nix)
+
+Fedora Silverblue (atomic) with the Cosmic desktop environment, Nix package manager and common setup.
 
 ## Installation
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
-
 To rebase an existing atomic Fedora installation to the latest build:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
+- (First time only) First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/blue-build/template:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/alexandregv/fedora-silverblue-cosmic:43
   ```
 - Reboot to complete the rebase:
   ```
@@ -21,7 +33,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/blue-build/template:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/alexandregv/fedora-silverblue-cosmic:43
   ```
 - Reboot again to complete the installation
   ```
@@ -39,5 +51,5 @@ If build on Fedora Atomic, you can generate an offline ISO with the instructions
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/blue-build/template
+cosign verify --key cosign.pub ghcr.io/alexandregv/bluebuild-images
 ```
