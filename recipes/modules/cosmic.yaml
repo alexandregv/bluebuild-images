@@ -1,23 +1,24 @@
 ---
-# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
 
-type: dnf
-group-install:
-  packages:
-    - cosmic-desktop
-  exclude:
-    - cosmic-store
-    - cosmic-player
-    - cosmic-wallpapers
-install:
-  packages:
-    - gnome-calculator
-    - gnome-disk-utility
-    - gnome-system-monitor
-
-type: default-flatpaks
-configurations:
-  - notify: true # Send notification after install/uninstall is finished (true/false)
-    scope: system
-    install: # system flatpaks we want all users to have and not remove
-      - dev.edfloreshz.CosmicTweaks # GNOME Tweaks but for Cosmic DE
+modules:
+  - type: dnf
+    group-install:
+      packages:
+        - cosmic-desktop
+      exclude:
+        - cosmic-store
+        - cosmic-player
+        - cosmic-wallpapers
+    install:
+      packages:
+        - gnome-calculator
+        - gnome-disk-utility
+        - gnome-system-monitor
+    
+  - type: default-flatpaks
+    configurations:
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        scope: system
+        install: # system flatpaks we want all users to have and not remove
+          - dev.edfloreshz.CosmicTweaks # GNOME Tweaks but for Cosmic DE
