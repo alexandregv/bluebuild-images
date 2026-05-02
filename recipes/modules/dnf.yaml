@@ -2,13 +2,14 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 
 type: dnf
-#repos:
-#  copr:
-#    - atim/starship
+repos:
+  copr:
+    - scottames/ghostty
 install:
   packages:
     - tmux
     - screen # For switch/router serial port
+    - ghostty
 
     # H264 on Firefox
     #- gstreamer1-plugins-good-extras
