@@ -2,11 +2,18 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 
 type: dnf
+group-install:
+  packages:
+    - cosmic-desktop
+  exclude:
+    - cosmic-store
+    - cosmic-player
+    - cosmic-wallpapers
 install:
   packages:
-    - '@cosmic-desktop-environment'
-remove:
-  packages: []
+    - gnome-calculator
+    - gnome-disk-utility
+    - gnome-system-monitor
 
 type: default-flatpaks
 configurations:
