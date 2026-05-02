@@ -37,6 +37,11 @@ install:
 
     - podman-compose
     - podman-docker
+
+    - efibootmgr
+    - efitools
+    - mokutil
+    - ukify
 remove:
   packages:
     # Remove firefox, in favor of the flatpak
