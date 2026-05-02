@@ -6,6 +6,7 @@ repos:
   nonfree: rpmfusion
   copr:
     - scottames/ghostty
+    - chenxiaolong/sbctl
 install:
   packages:
     - tmux
@@ -45,6 +46,7 @@ install:
     - pesign
     - sbsigntools
     - systemd-ukify
+    - sbctl
 remove:
   packages:
     # Remove firefox, in favor of the flatpak
