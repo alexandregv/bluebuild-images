@@ -41,7 +41,7 @@ install:
     - efibootmgr
     - efitools
     - mokutil
-    - ukify
+    - systemd-ukify
 remove:
   packages:
     # Remove firefox, in favor of the flatpak
