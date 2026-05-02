@@ -9,7 +9,6 @@ configurations:
       - org.mozilla.firefox
       - org.remmina.Remmina    # VNC client
       - com.bitwarden.desktop  # Password manager
-      - dev.edfloreshz.CosmicTweaks # GNOME Tweaks but for Cosmic DE
       - com.getpostman.Postman # REST client
       - com.discordapp.Discord
       - com.slack.Slack

@@ -7,3 +7,10 @@ install:
     - '@cosmic-desktop-environment'
 remove:
   packages: []
+
+type: default-flatpaks
+configurations:
+  - notify: true # Send notification after install/uninstall is finished (true/false)
+    scope: system
+    install: # system flatpaks we want all users to have and not remove
+      - dev.edfloreshz.CosmicTweaks # GNOME Tweaks but for Cosmic DE
