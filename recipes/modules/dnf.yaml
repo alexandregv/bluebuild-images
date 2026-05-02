@@ -41,6 +41,8 @@ install:
     - efibootmgr
     - efitools
     - mokutil
+    - keyutils
+    - pesign
     - sbsigntools
     - systemd-ukify
 remove:
