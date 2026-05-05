@@ -45,6 +45,9 @@ install:
     - sbctl
 
     - btrfs-assistant # GUI for btrfs snaphots and other
+group-install:
+  packages:
+    - virtualization
 remove:
   packages:
     # Remove firefox, in favor of the flatpak
