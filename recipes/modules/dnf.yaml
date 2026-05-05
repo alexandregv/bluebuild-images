@@ -43,6 +43,8 @@ install:
     - sbsigntools
     - systemd-ukify
     - sbctl
+
+    - btrfs-assistant # GUI for btrfs snaphots and other
 remove:
   packages:
     # Remove firefox, in favor of the flatpak
