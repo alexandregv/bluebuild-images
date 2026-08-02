@@ -1,0 +1,65 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+
+modules:
+
+  - type: dnf
+    repos:
+      copr:
+        enable:
+          - lionheartp/Hyprland
+    install:
+      install-weak-deps: true
+      packages:
+        - aquamarine
+        - hyprutils
+        - awww
+        - breakpad
+        - cliphist
+        #- glaze
+        - gpu-screen-recorder
+        - hyprcursor
+        - hyprgraphics
+        - hypridle
+        - hyprland
+        - hyprland-contrib
+        - hyprland-guiutils
+        - hyprland-plugins
+        #- hyprland-protocols
+        - hyprland-qt-support
+        - hyprlang
+        - hyprlauncher
+        - hyprlock
+        - hyprpaper
+        - hyprpicker
+        - hyprpolkitagent
+        - hyprpwcenter
+        - hyprqt6engine
+        - hyprshot
+        - hyprshutdown
+        - hyprsunset
+        - hyprsysteminfo
+        - hyprtoolkit
+        - hyprwayland-scanner
+        - hyprwire
+        - matugen
+        #- noctalia-git
+        #- noctalia-greeter
+        - noctalia-hyprland-meta
+        #- noctalia-qs
+        #- noctalia-qs-legacy
+        #- noctalia-shell
+        #- noctalia-shell-legacy
+        #- noctalia-shell-v5
+        - nwg-look
+        - python-imageio-ffmpeg
+        - python-screeninfo
+        - qt6ct
+        #- quickshell
+        - uwsm
+        - waybar-git
+        #- wayland-protocols
+        - waypaper
+        - wlroots
+        - xcur2png
+        - xdg-desktop-portal-hyprland

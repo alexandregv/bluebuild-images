@@ -1,0 +1,21 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+name: fedora-silverblue-hyprland-nix
+description: Atomic image with Hyprland DE and Noctalia shell, Nix package manager and common utilities, based on Fedora Silverblue
+
+base-image: ghcr.io/ublue-os/silverblue-main
+image-version: 44
+
+modules:
+  - from-file: modules/system-files.yaml
+
+  - from-file: modules/nix.yaml
+
+  - from-file: modules/dnf.yaml
+
+  - from-file: modules/hyprland.yaml
+
+  - from-file: modules/default-flatpaks.yaml
+
+  - from-file: modules/signing.yaml
