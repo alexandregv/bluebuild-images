@@ -7,12 +7,14 @@ Images are built according to YAML recipes found in [`./recipes/`](./recipes/). 
 
 ## Images
 
-| Name                         	| Recipe                                                               	| Image                                                                                                             |
-|------------------------------	|---------------------------------------------------------------------- |------------------------------------------------------------------------------------------------------------------ |
-| Fedora Silverblue GNOME      	| [`silverblue-gnome.yaml`](./recipes/silverblue-gnome.yaml)           	| [`ghcr.io/alexandregv/fedora-silverblue-gnome`](https://ghcr.io/alexandregv/fedora-silverblue-gnome)              |
-| Fedora Silverblue GNOME Nix  	| [`silverblue-gnome-nix.yaml`](./recipes/silverblue-gnome-nix.yaml)   	| [`ghcr.io/alexandregv/fedora-silverblue-gnome-nix`](https://ghcr.io/alexandregv/fedora-silverblue-gnome-nix)      |
-| Fedora Silverblue Cosmic     	| [`silverblue-cosmic.yaml`](./recipes/silverblue-cosmic.yaml)         	| [`ghcr.io/alexandregv/fedora-silverblue-cosmic`](https://ghcr.io/alexandregv/fedora-silverblue-cosmic)            |
-| Fedora Silverblue Cosmic Nix 	| [`silverblue-cosmic-nix.yaml`](./recipes/silverblue-cosmic-nix.yaml) 	| [`ghcr.io/alexandregv/fedora-silverblue-cosmic-nix`](https://ghcr.io/alexandregv/fedora-silverblue-cosmic-nix)    |
+| Name                         	  | Recipe                                                               	    | Image                                                                                                               |
+|-------------------------------- |-------------------------------------------------------------------------- |-------------------------------------------------------------------------------------------------------------------- |
+| Fedora Silverblue GNOME      	  | [`silverblue-gnome.yaml`](./recipes/silverblue-gnome.yaml)           	    | [`ghcr.io/alexandregv/fedora-silverblue-gnome`](https://ghcr.io/alexandregv/fedora-silverblue-gnome)                |
+| Fedora Silverblue GNOME Nix  	  | [`silverblue-gnome-nix.yaml`](./recipes/silverblue-gnome-nix.yaml)   	    | [`ghcr.io/alexandregv/fedora-silverblue-gnome-nix`](https://ghcr.io/alexandregv/fedora-silverblue-gnome-nix)        |
+| Fedora Silverblue Cosmic     	  | [`silverblue-cosmic.yaml`](./recipes/silverblue-cosmic.yaml)         	    | [`ghcr.io/alexandregv/fedora-silverblue-cosmic`](https://ghcr.io/alexandregv/fedora-silverblue-cosmic)              |
+| Fedora Silverblue Cosmic Nix 	  | [`silverblue-cosmic-nix.yaml`](./recipes/silverblue-cosmic-nix.yaml) 	    | [`ghcr.io/alexandregv/fedora-silverblue-cosmic-nix`](https://ghcr.io/alexandregv/fedora-silverblue-cosmic-nix)      |
+| Fedora Silverblue Hyprland     	| [`silverblue-hyprland.yaml`](./recipes/silverblue-hyprland.yaml) 	        | [`ghcr.io/alexandregv/fedora-silverblue-hyprland`](https://ghcr.io/alexandregv/fedora-silverblue-hyprland)          |
+| Fedora Silverblue Hyprland Nix 	| [`silverblue-hyprland-nix.yaml`](./recipes/silverblue-hyprland-nix.yaml) 	| [`ghcr.io/alexandregv/fedora-silverblue-hyprland-nix`](https://ghcr.io/alexandregv/fedora-silverblue-hyprland-nix)  |
 
 ## Installation
 
