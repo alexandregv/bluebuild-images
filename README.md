@@ -1,7 +1,7 @@
 # BlueBuild Images &nbsp; [![bluebuild build badge](https://github.com/alexandregv/bluebuild-images/actions/workflows/build.yml/badge.svg)](https://github.com/alexandregv/bluebuild-images/actions/workflows/build.yml)
 
 This repository provides Linux images built using [BlueBuild](https://blue-build.org). It is based on the [BlueBuild template](https://github.com/blue-build/template).  
-The CI builds weekly and follows base image updates, adding the modified layers on top.
+The CI builds daily and follows base image updates, adding the modified layers on top.
 
 Images are built according to YAML recipes found in [`./recipes/`](./recipes/). They share common modules found in [`./recipes/modules/`](./recipes/modules/).
 
