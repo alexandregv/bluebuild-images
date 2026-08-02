@@ -32,6 +32,9 @@ jobs:
 
           - silverblue-cosmic.yaml
           - silverblue-cosmic-nix.yaml
+
+          - silverblue-hyprland.yaml
+          - silverblue-hyprland-nix.yaml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
