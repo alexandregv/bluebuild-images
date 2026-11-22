@@ -5,7 +5,7 @@ name: fedora-silverblue-hyprland
 description: Atomic image with Hyprland DE plus Noctalia shell and common utilities, based on Fedora Silverblue
 
 base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 44
+image-version: 45
 
 modules:
   - from-file: modules/system-files.yaml
